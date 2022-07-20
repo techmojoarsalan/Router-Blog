@@ -29,7 +29,7 @@ export default function App() {
         
            <Row sm={1} md={5} className="g-4 m-2">
            {apiData && apiData.map((item) => {
-             return <Col>
+             return <Col key={item.id}>
           <Card>
          <Link to={`/blog/${item.id}`}> 
             <Card.Img variant="top" src={item.url} className="p-3" />
